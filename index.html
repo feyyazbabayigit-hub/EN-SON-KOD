@@ -2302,6 +2302,8 @@ function switchTab(tabName, force = false) {
     if (planView) planView.classList.add('hidden');
     if (listView) listView.classList.remove('hidden');
     activeCariId = null;
+    const cariFilterPanel = document.getElementById('cariFilterDropdownPanel');
+if (cariFilterPanel) cariFilterPanel.classList.add('hidden');
   }
 
   document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
